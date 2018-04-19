@@ -35,3 +35,21 @@ header {
     padding: 20px 40px;
     background: #ffeaa7;
 }
+
+/* >>>> LEFT SECTION <<<< */
+.left {
+    padding: 40px;
+    text-align: center;
+}
+
+.left div {
+    margin: 10px 0;
+}
+
+#location {
+    font-size: 1.2em;
+}
+
+#temperature {
+    font-size: 4em;
+}
