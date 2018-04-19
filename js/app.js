@@ -1,12 +1,17 @@
-const xhr = new XMLHttpRequest();
+const xhrConditions = new XMLHttpRequest();
 let conditionsObj;
 
-xhr.open('GET', 'http://api.wunderground.com/api/e17b6fcb2c4b30bc/conditions/q/CA/San_Francisco.json', true)
-xhr.responseType = 'text';
-xhr.send();
+xhrConditions.open('GET', 'http://api.wunderground.com/api/e17b6fcb2c4b30bc/conditions/q/CA/San_Francisco.json', true)
+xhrConditions.responseType = 'text';
+xhrConditions.send();
 
-xhr.onload = function () {
-    if (xhr.status === 200) {
-        conditionsObj = JSON.parse(xhr.responseText);
+xhrConditions.onload = function () {
+    if (xhrConditions.status === 200) {
+        conditionsObj = JSON.parse(xhrConditions.responseText);
+        console.log(conditionsObj);
+
+        document.getElementById('location').innerHTML = conditionsObj.current_observation.display_location.full;
+        document.getElementById('weather').innerHTML = conditionsObj.current_observation.weather;
+        document.getElementById('temperature').innerHTML = conditionsObj.current_observation.temp_c;
     }
 }
