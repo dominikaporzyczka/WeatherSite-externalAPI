@@ -1,3 +1,4 @@
+/* >>>> GENERAL <<<< */
 html,
 body {
     margin: 0;
@@ -14,6 +15,14 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1em;
 }
 
 #container {
