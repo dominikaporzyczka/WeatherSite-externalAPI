@@ -30,19 +30,19 @@ h2 {
     margin: 40px auto;
 }
 
-/* >>>> HEADER <<<< */
-header {
+header,
+footer {
     padding: 20px 40px;
     background: #ffeaa7;
 }
 
 /* >>>> LEFT SECTION <<<< */
-.left {
+#left {
     padding: 40px;
     text-align: center;
 }
 
-.left div {
+#left div {
     margin: 10px 0;
 }
 
@@ -52,4 +52,9 @@ header {
 
 #temperature {
     font-size: 4em;
+}
+
+/* >>>> FOOTER <<<< */
+footer {
+    text-align: center;
 }
