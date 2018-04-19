@@ -27,7 +27,7 @@ h2 {
 
 #container {
     max-width: 850px;
-    margin: 40px auto;
+    margin: 0 auto;
 }
 
 header,
@@ -57,4 +57,12 @@ footer {
 /* >>>> FOOTER <<<< */
 footer {
     text-align: center;
+}
+
+
+/* >>>> RESPONSIVE <<<< */
+@media screen and (min-width: 850px) {
+    #container {
+        margin: 40px auto;
+    }
 }
