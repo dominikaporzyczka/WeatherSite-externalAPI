@@ -18,11 +18,11 @@ html {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 h2 {
-    font-size: 1em;
+    font-size: 0.7em;
 }
 
 #container {
@@ -34,6 +34,17 @@ header,
 footer {
     padding: 20px 40px;
     background: #ffeaa7;
+}
+
+/* >>>> HEADER <<<< */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather_icon img {
+    width: 70px;
 }
 
 /* >>>> LEFT SECTION <<<< */
@@ -65,5 +76,20 @@ footer {
     #container {
         margin: 40px auto;
         box-shadow: 10px 10px 42px -2px rgba(0,0,0,0.75);
+    }
+
+}
+
+@media screen and (min-width: 490px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    h2 {
+        font-size: 1em;
+    }
+
+    .weather_icon img {
+        width: 100px;
     }
 }
