@@ -65,6 +65,31 @@ header {
     font-size: 4em;
 }
 
+/* >>>> RIGHT SECTION <<<< */
+#right div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2d343675;
+}
+
+#right div:last-of-type {
+    border: none;
+}
+
+#right span {
+    flex: 1 1 25%;
+    padding: 5px;
+}
+
+#right img {
+    width: 30px;
+}
+
+#forecast-container {
+    padding: 0 40px 40px 40px;
+}
+
 /* >>>> FOOTER <<<< */
 footer {
     text-align: center;
@@ -91,5 +116,14 @@ footer {
 
     .weather_icon img {
         width: 100px;
+    }
+
+    #forecast-container {
+        display: flex;
+        align-items: center;
+    }
+
+    #forecast-container section {
+        flex-basis: 50%;
     }
 }
