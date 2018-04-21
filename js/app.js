@@ -26,7 +26,13 @@ xhrForecast.send();
 xhrForecast.onload = function () {
     if (xhrForecast.status === 200) {
         forecastObj = JSON.parse(xhrForecast.responseText);
-
+        
         document.getElementById('description').innerHTML = forecastObj.forecast.txt_forecast.forecastday[0].fcttext;
+
+        // DAY 1
+        document.getElementById('day1').innerHTML = forecastObj.forecast.simpleforecast.forecastday[1].date.weekday;
+        document.getElementById('img1').src = forecastObj.forecast.simpleforecast.forecastday[1].icon_url;
+        document.getElementById('tempMax1').innerHTML = forecastObj.forecast.simpleforecast.forecastday[1].high.celsius + '°';
+        document.getElementById('tempMin1').innerHTML = forecastObj.forecast.simpleforecast.forecastday[1].low.celsius + '°';
     }
 }
