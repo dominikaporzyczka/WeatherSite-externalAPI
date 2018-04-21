@@ -47,6 +47,11 @@ header {
     width: 70px;
 }
 
+/* >>>> MAIN CONTAINER <<<< */
+#forecast-container {
+    padding: 0 40px 40px 40px;
+}
+
 /* >>>> LEFT SECTION <<<< */
 #left {
     padding: 40px;
@@ -84,10 +89,6 @@ header {
 
 #right img {
     width: 30px;
-}
-
-#forecast-container {
-    padding: 0 40px 40px 40px;
 }
 
 /* >>>> FOOTER <<<< */
